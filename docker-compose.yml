@@ -10,8 +10,8 @@ services:
     image: dpage/pgadmin4:8.9
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: devteds@pgadmin.org
-      PGADMIN_DEFAULT_PASSWORD: devteds      
+      PGADMIN_DEFAULT_EMAIL: george.bilbrey@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: churndbdev      
       PGADMIN_CONFIG_WTF_CSRF_HEADERS: '["Referer", "Origin"]'
       PGADMIN_CONFIG_WTF_CSRF_ENABLED: 'False'
     volumes:
@@ -25,8 +25,8 @@ services:
     image: postgres:12.19
     restart: always          
     environment: 
-      POSTGRES_USER: devtedsuser
-      POSTGRES_PASSWORD: devtedspass
+      POSTGRES_USER: gbilbrey
+      POSTGRES_PASSWORD: churndbpass
       POSTGRES_DB: demodb
     volumes:                 
       - pg-data:/var/lib/postgresql/data
